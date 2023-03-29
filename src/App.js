@@ -15,7 +15,7 @@ export default function App() {
       [1, 4, 7],
       [2, 5, 8],
       [0, 4, 8],
-      [2, 4, 6]
+      [2, 4, 6],
     ];
     for (let i = 0; i < conditions.length; i++) {
       const [a, b, c] = conditions[i];
@@ -42,13 +42,28 @@ export default function App() {
   };
   return (
     <div className="App">
+      <h1 className="h1">
+        <span className="pan">tic tac</span> toe
+      </h1>
       <div className="grid">
         {boxes.map((box, index) => (
-          <div key={index} className="box" onClick={() => handleclick(index)}>
+          <div
+            key={index}
+            className="box"
+            onClick={() => handleclick(index)}
+            style={{ color: box === "X" ? "tomato" : "blue" }}
+          >
             {box}
           </div>
         ))}
       </div>
+      <button
+        onClick={() => {
+          setBoxes(Array(9).fill(" "));
+        }}
+      >
+        new game
+      </button>
     </div>
   );
 }
