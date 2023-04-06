@@ -1,4 +1,5 @@
-Tic Tac Toe Game in React.js
+
+# tic tac toe in react 
 This is a simple implementation of the classic Tic Tac Toe game built using React.js. The game features a clean and intuitive user interface, allowing players to easily start a new game, place their moves on the board, and view the results of each game.
 
 Getting Started
@@ -32,3 +33,5 @@ If you have any suggestions or ideas to improve this Tic Tac Toe game, feel free
 
 License
 This Tic Tac Toe game is licensed under the MIT license. Feel free to use and modify this code however you like, as long as you include the original license in your project.
+
+
